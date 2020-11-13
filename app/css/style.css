@@ -407,3 +407,9 @@ body {
   line-height: 20px;
   min-width: 320px;
 }
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
