@@ -1,0 +1,31 @@
+.footer {
+	background: $fiolet;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	&__inner {
+		padding: 15px 24px;
+	}
+	&__top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__info {
+		margin-top: 17px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		& li {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__copy {
+		margin-top: 18px;
+		text-align: center;
+	}
+}
