@@ -371,6 +371,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
 button {
   padding: 0;
   cursor: pointer;
@@ -411,11 +415,11 @@ body {
 .container {
   width: 320px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0;
 }
 
 .header__inner {
-  padding: 22px 19px 26px;
+  padding: 22px 24px 26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -451,7 +455,12 @@ body {
 }
 
 .header__logo {
-  display: flex;
+  display: block;
+  width: 103px;
+  height: 32px;
+  background: url(../images/header/logo-tel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__tel {
