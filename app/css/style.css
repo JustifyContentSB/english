@@ -418,6 +418,10 @@ body {
   padding: 0;
 }
 
+.header {
+  box-shadow: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
+}
+
 .header__inner {
   padding: 22px 24px 26px;
   display: flex;
@@ -482,4 +486,115 @@ body {
   width: 13px;
   height: 20px;
   background: url("../images/header/tel.svg");
+}
+
+.offer {
+  margin-top: 80px;
+}
+
+.offer__inner {
+  padding: 27px 24px 46px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  box-shadow: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
+  border-radius: 24px;
+}
+
+.offer__inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 292px;
+  background: url(../images/offer/girl.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+}
+
+.offer__list {
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.offer__list li + li {
+  margin-top: 34px;
+}
+
+.offer__list li {
+  padding-left: 30px;
+  position: relative;
+}
+
+.offer__list li::before {
+  content: '';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+}
+
+.offer__list li:nth-child(1) {
+  color: #4643D3;
+}
+
+.offer__list li:nth-child(1)::before {
+  content: url("../images/offer/question.svg");
+}
+
+.offer__list li:nth-child(2) {
+  color: #FE805C;
+}
+
+.offer__list li:nth-child(2)::before {
+  top: 15px;
+  content: url("../images/offer/check.svg");
+}
+
+.offer__title {
+  margin: 0;
+  margin-top: 15px;
+  font-family: 'ProximaNova-Regular';
+  font-size: 34px;
+  line-height: 42px;
+  color: #FE805C;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.offer__title span {
+  font-family: 'ProximaNova-Bold';
+  color: #4643D3;
+}
+
+.offer__text {
+  margin-top: 30px;
+  padding-left: 30px;
+  color: #443E3E;
+  text-align: right;
+}
+
+.offer__free {
+  display: block;
+  margin-top: 30px;
+  padding: 16px 18px 15px 27px;
+  background: #FE805C;
+  color: #fff;
+  border-radius: 24px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  text-align: center;
 }
