@@ -1,4 +1,5 @@
 .footer {
+	margin-top: 80px;
 	background: $fiolet;
 	font-size: 14px;
 	line-height: 17px;
@@ -18,7 +19,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		& li {
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -27,5 +28,8 @@
 	&__copy {
 		margin-top: 18px;
 		text-align: center;
+	}
+	&__contact {
+		margin-top: 40px;
 	}
 }

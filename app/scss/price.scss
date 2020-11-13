@@ -8,6 +8,7 @@
 		text-align: center;
 		font-size: 24px;
 		line-height: 29px;
+		letter-spacing: 1px;
 	}
 	&__list {
 		margin-top: 40px;
@@ -39,6 +40,9 @@
 			& .price__entry {
 				background: $fiolet;
 			}
+		}
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 	&__time {
