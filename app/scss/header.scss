@@ -6,9 +6,6 @@
 		flex-wrap: wrap;
 		align-items: center;
 		text-transform: uppercase;
-		@media screen and(min-width: 411px) {
-			
-		}
 	}
 	&__nav {
 		display: none;
@@ -59,6 +56,25 @@
 			width: 13px;
 			height: 20px;
 			background: url('../images/header/tel.svg');
+		}
+	}
+}
+
+@media screen and(min-width: 411px) {
+	.header {
+		&__inner {
+			padding: 20px 24px;
+		}
+		&__burger {
+			margin-right: 14px;
+		}
+		&__logo {
+			width: 151px;
+			height: 47px;
+			background: url('../images/header/logo-411.png');
+		}
+		&__tel {
+			font-size: 14px;
 		}
 	}
 }

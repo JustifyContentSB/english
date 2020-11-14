@@ -489,6 +489,23 @@ body {
   background: url("../images/header/tel.svg");
 }
 
+@media screen and (min-width: 411px) {
+  .header__inner {
+    padding: 20px 24px;
+  }
+  .header__burger {
+    margin-right: 14px;
+  }
+  .header__logo {
+    width: 151px;
+    height: 47px;
+    background: url("../images/header/logo-411.png");
+  }
+  .header__tel {
+    font-size: 14px;
+  }
+}
+
 .offer {
   margin-top: 80px;
 }
