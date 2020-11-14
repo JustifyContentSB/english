@@ -39,3 +39,16 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1440px) {
+	.nav {
+		&__list {
+			& li {
+				margin-right: 140px;
+				&:first-child {
+					margin-right: 140px;
+				}
+			}
+		}
+	}
+}
