@@ -94,6 +94,14 @@
 		letter-spacing: 1.6px;
 		text-transform: uppercase;
 		text-align: center;
+		transition: all 0.2s ease;
+		&:hover,
+		&:focus {
+			background: #FD3800;
+		}
+		&:active {
+			opacity: 0.5;
+		}
 	}
 }
 
@@ -152,7 +160,7 @@
 @media screen and(min-width: 1000px) {
 	.offer {
 		&__inner {
-			width: 961px;
+			width: 980px;
 			padding-top: 47px;
 			padding-left: 183px;
 			display: flex;
@@ -168,11 +176,12 @@
 			}
 		}
 		&__list {
-			width: 380px;
-			margin-top: 27px;
+			width: 400px;
+			margin-top: 40px;
+			padding-left: 40px;
 		}
 		&__about {
-			width: 376px;
+			width: 365px;
 		}
 		&__title {
 			margin-top: 0;
@@ -184,6 +193,7 @@
 	.offer {
 		&__inner {
 			width: 1344px;
+			padding-left: 250px;
 		}
 		&__list {
 			width: 570px;

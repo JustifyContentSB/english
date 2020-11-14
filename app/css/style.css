@@ -413,9 +413,16 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1370px;
+  }
 }
 
 .header {
@@ -712,6 +719,15 @@ body {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   text-align: center;
+  transition: all 0.2s ease;
+}
+
+.offer__free:hover, .offer__free:focus {
+  background: #FD3800;
+}
+
+.offer__free:active {
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 411px) {
@@ -764,7 +780,7 @@ body {
 
 @media screen and (min-width: 1000px) {
   .offer__inner {
-    width: 961px;
+    width: 980px;
     padding-top: 47px;
     padding-left: 183px;
     display: flex;
@@ -780,11 +796,12 @@ body {
     background-repeat: no-repeat;
   }
   .offer__list {
-    width: 380px;
-    margin-top: 27px;
+    width: 400px;
+    margin-top: 40px;
+    padding-left: 40px;
   }
   .offer__about {
-    width: 376px;
+    width: 365px;
   }
   .offer__title {
     margin-top: 0;
@@ -794,6 +811,7 @@ body {
 @media screen and (min-width: 1440px) {
   .offer__inner {
     width: 1344px;
+    padding-left: 250px;
   }
   .offer__list {
     width: 570px;
@@ -1013,6 +1031,11 @@ body {
   border-radius: 24px;
 }
 
+.advantage__record:hover .advantage__record-text, .advantage__record:focus .advantage__record-text {
+  background: #4643D3;
+  color: #fff;
+}
+
 .advantage__record-title {
   margin: 0;
   font-family: 'ProximaNova-Bold';
@@ -1034,6 +1057,7 @@ body {
   text-transform: uppercase;
   font-family: 'ProximaNova-Bold';
   color: #0D006A;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 411px) {
@@ -1143,6 +1167,16 @@ body {
   border-radius: 24px;
 }
 
+.price__item:nth-child(1):hover .price__entry,
+.price__item:nth-child(1):focus .price__entry {
+  background: #FD3800;
+}
+
+.price__item:nth-child(2):hover .price__entry,
+.price__item:nth-child(2):focus .price__entry {
+  background: #0400CC;
+}
+
 .price__item:nth-child(2) {
   background: #FE805C;
 }
@@ -1184,6 +1218,7 @@ body {
   margin-top: 10px;
   border-radius: 100px;
   background: #FE805C;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -1370,6 +1405,16 @@ body {
 
 .footer__info li:last-child {
   margin-bottom: 0;
+}
+
+.footer__info a:hover,
+.footer__info a:focus {
+  text-decoration: underline;
+}
+
+.footer__info a:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer__copy {

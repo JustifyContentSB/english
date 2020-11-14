@@ -30,6 +30,14 @@
 				margin-bottom: 0;
 			}
 		}
+		& a:hover,
+		& a:focus {
+			text-decoration: underline;
+		}
+		& a:active {
+			opacity: 0.5;
+			text-decoration: none;
+		}
 	}
 	&__copy {
 		margin-top: 18px;

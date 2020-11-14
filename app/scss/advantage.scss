@@ -79,6 +79,13 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-radius: 24px;
+		&:hover,
+		&:focus {
+			& .advantage__record-text {
+				background: $fiolet;
+				color: #fff;
+			}
+		}
 		&-title {
 			margin: 0;
 			font-family: 'ProximaNova-Bold';
@@ -99,6 +106,7 @@
 			text-transform: uppercase;
 			font-family: 'ProximaNova-Bold';
 			color: $blue;
+			transition: all 0.3s ease;
 		}
 	}
 }

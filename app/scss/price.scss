@@ -34,6 +34,14 @@
 					20px 30px 30px rgba(51, 68, 102, 0.06), 
 					55px 65px 44px rgba(78, 125, 197, 0.13);
 		border-radius: 24px;
+		&:nth-child(1):hover .price__entry,
+		&:nth-child(1):focus .price__entry {
+			background: #FD3800;
+		}
+		&:nth-child(2):hover .price__entry,
+		&:nth-child(2):focus .price__entry {
+			background: #0400CC;
+		}
 		&:nth-child(2) {
 			background: $orange;
 			& .price__time {
@@ -69,6 +77,7 @@
 		margin-top: 10px;
 		border-radius: 100px;
 		background: $orange;
+		transition: all 0.3s ease;
 	}
 }
 
