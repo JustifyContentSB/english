@@ -147,3 +147,22 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1000px) {
+	.advantage {
+		&__top {
+			width: 937px;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		&__title {
+			padding-left: 35px;
+		}
+		&__record {
+			margin: 0;
+		}
+	}
+}

@@ -1035,6 +1035,23 @@ body {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .advantage__top {
+    width: 937px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .advantage__title {
+    padding-left: 35px;
+  }
+  .advantage__record {
+    margin: 0;
+  }
+}
+
 .price {
   margin-top: 75px;
 }
