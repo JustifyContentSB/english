@@ -111,3 +111,35 @@
 		}
 	}
 }
+
+@media screen and(min-width: 768px) {
+	.offer {
+		&__inner {
+			width: 719px;
+			padding: 30px 22px 39px 313px;
+			margin: 0 auto;
+			background: url('../images/offer/girl-768.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			&::before {
+				display: none;
+			}
+		}
+		&__list {
+			line-height: 20px;
+			letter-spacing: 1.6px;
+		}
+		&__title {
+			margin-top: 50px;
+			font-size: 36px;
+			line-height: 44px;
+			letter-spacing: 1px;
+		}
+		&__text {
+			margin-top: 5px;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 1.6px;
+		}
+	}
+}

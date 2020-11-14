@@ -697,6 +697,36 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .offer__inner {
+    width: 719px;
+    padding: 30px 22px 39px 313px;
+    margin: 0 auto;
+    background: url("../images/offer/girl-768.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .offer__inner::before {
+    display: none;
+  }
+  .offer__list {
+    line-height: 20px;
+    letter-spacing: 1.6px;
+  }
+  .offer__title {
+    margin-top: 50px;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 1px;
+  }
+  .offer__text {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1.6px;
+  }
+}
+
 .features {
   margin-top: 62px;
 }
