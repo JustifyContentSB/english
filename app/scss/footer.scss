@@ -1,5 +1,5 @@
 .footer {
-	margin-top: 80px;
+	margin-top: 30px;
 	background: $fiolet;
 	font-size: 14px;
 	line-height: 17px;
@@ -31,5 +31,19 @@
 	}
 	&__contact {
 		margin-top: 40px;
+	}
+}
+
+@media screen and(min-width: 411px) {
+	.footer {
+		&__logo {
+			& img {
+				width: 199px;
+				height: auto;
+			}
+		}
+		&__contact {
+			margin-top: 20px;
+		}
 	}
 }

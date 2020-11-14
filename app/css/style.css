@@ -899,10 +899,6 @@ body {
   background: #4643D3;
 }
 
-.price__item:last-child {
-  margin-bottom: 0;
-}
-
 .price__time {
   width: 100px;
   height: 100px;
@@ -1015,7 +1011,7 @@ body {
 }
 
 .footer {
-  margin-top: 80px;
+  margin-top: 30px;
   background: #4643D3;
   font-size: 14px;
   line-height: 17px;
@@ -1055,4 +1051,14 @@ body {
 
 .footer__contact {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 411px) {
+  .footer__logo img {
+    width: 199px;
+    height: auto;
+  }
+  .footer__contact {
+    margin-top: 20px;
+  }
 }
