@@ -96,3 +96,18 @@
 		text-align: center;
 	}
 }
+
+@media screen and(min-width: 411px) {
+	.offer {
+		&__list {
+			font-size: 16px;
+		}
+		&__text {
+			margin-top: 50px;
+		}
+		&__free {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}
