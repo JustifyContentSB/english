@@ -1135,6 +1135,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .price {
+    margin-top: 43px;
+  }
   .price__list {
     width: 656px;
     margin: 0 auto;
@@ -1146,6 +1149,10 @@ body {
   .price__item {
     margin: 0;
     margin-bottom: 32px;
+  }
+  .price__title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
