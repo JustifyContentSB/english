@@ -69,6 +69,7 @@
 	}
 	&__record {
 		display: block;
+		margin: 0 auto;
 		margin-top: 40px;
 		min-height: 216px;
 		padding-top: 40px;
@@ -98,6 +99,30 @@
 			text-transform: uppercase;
 			font-family: 'ProximaNova-Bold';
 			color: $blue;
+		}
+	}
+}
+
+@media screen and(min-width: 411px) {
+	.advantage {
+		&__list {
+			& li {
+				font-size: 16px;
+			}
+		}
+		&__record {
+			margin-top: 70px;
+			width: 362px;
+			&-title {
+				font-size: 18px;
+				& br {
+					display: none;
+				}
+			}
+			&-text {
+				margin-top: 48px;
+				font-size: 18px;
+			}
 		}
 	}
 }

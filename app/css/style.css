@@ -792,6 +792,7 @@ body {
 
 .advantage__record {
   display: block;
+  margin: 0 auto;
   margin-top: 40px;
   min-height: 216px;
   padding-top: 40px;
@@ -824,6 +825,26 @@ body {
   text-transform: uppercase;
   font-family: 'ProximaNova-Bold';
   color: #0D006A;
+}
+
+@media screen and (min-width: 411px) {
+  .advantage__list li {
+    font-size: 16px;
+  }
+  .advantage__record {
+    margin-top: 70px;
+    width: 362px;
+  }
+  .advantage__record-title {
+    font-size: 18px;
+  }
+  .advantage__record-title br {
+    display: none;
+  }
+  .advantage__record-text {
+    margin-top: 48px;
+    font-size: 18px;
+  }
 }
 
 .price {
