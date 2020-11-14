@@ -110,3 +110,28 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1440px) {
+	.footer {
+		&__top {
+			justify-content: flex-start;
+		}
+		&__contact {
+			margin: 0;
+			margin-left: 121px;
+		}
+		&__logo {
+			margin-left: auto;
+			margin-right: 20px;
+		}
+		&__copy {
+			order: -1;
+			margin-right: 44px;
+		}
+		&__info {
+			& li {
+				margin-right: 70px;
+			}
+		}
+	}
+}
