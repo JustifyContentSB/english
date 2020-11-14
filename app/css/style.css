@@ -943,6 +943,8 @@ body {
   .advantage__record {
     margin-top: 70px;
     width: 362px;
+    padding-left: 19px;
+    padding-right: 20px;
   }
   .advantage__record-title {
     font-size: 18px;
@@ -953,6 +955,22 @@ body {
   .advantage__record-text {
     margin-top: 48px;
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage {
+    margin-top: 40px;
+  }
+  .advantage__title {
+    text-align: left;
+    padding-left: 185px;
+  }
+  .advantage__list {
+    padding: 0;
+    width: 468px;
+    margin: 0 auto;
+    margin-top: 18px;
   }
 }
 
