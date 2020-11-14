@@ -414,7 +414,7 @@ body {
 }
 
 .container {
-  width: 768px;
+  width: 1000px;
   margin: 0 auto;
   padding: 0;
 }
@@ -548,6 +548,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .header__logo {
+    width: 215px;
+    height: 66px;
+  }
+}
+
 .nav__list li {
   font-family: 'ProximaNova-Bold';
   font-size: 18px;
@@ -568,6 +575,15 @@ body {
   }
   .nav__list li:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list li {
+    margin-right: 60px;
+  }
+  .nav__list li:first-child {
+    margin-right: 60px;
   }
 }
 
