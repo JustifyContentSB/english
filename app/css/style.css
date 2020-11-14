@@ -774,7 +774,7 @@ body {
   }
   .offer__inner::before {
     display: block;
-    width: 512px;
+    width: 511px;
     height: 100%;
     background: url("../images/offer/girl-1000.png");
     background-repeat: no-repeat;
@@ -788,6 +788,28 @@ body {
   }
   .offer__title {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offer__inner {
+    width: 1344px;
+  }
+  .offer__list {
+    width: 570px;
+    font-size: 18px;
+  }
+  .offer__list li + li {
+    margin-top: 45px;
+  }
+  .offer__about {
+    width: 450px;
+  }
+  .offer__text {
+    margin-top: 14px;
+  }
+  .offer__free {
+    margin-top: 43px;
   }
 }
 
