@@ -83,3 +83,30 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1000px) {
+	.footer {
+		&__top {
+			align-items: center;
+		}
+		&__contact {
+			width: 522px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			& li {
+				margin-bottom: 0;
+			}
+		}
+		&__down {
+			display: flex;
+			margin-top: 10px;
+		}
+		&__info {
+			margin-top: 0;
+		}
+		&__copy {
+			margin-top: 0;
+		}
+	}
+}

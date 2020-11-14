@@ -30,3 +30,27 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1000px) {
+	.soc-list {
+		&__item {
+			margin-right: 10px;
+			& a {
+				width: 40px;
+				height: 40px;
+			}
+			&:nth-child(1) img {
+				width: 21px;
+				height: auto;
+			}
+			&:nth-child(2) img {
+				width: 17px;
+				height: auto;
+			}
+			&:nth-child(3) img {
+				width: 21px;
+				height: auto;
+			}
+		}
+	}
+}
