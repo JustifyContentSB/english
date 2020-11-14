@@ -921,6 +921,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .features__list {
+    width: 1344px;
+  }
+}
+
 .advantage {
   margin-top: 80px;
 }

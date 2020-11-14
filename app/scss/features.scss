@@ -101,3 +101,11 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1440px) {
+	.features {
+		&__list {
+			width: 1344px;
+		}
+	}
+}
