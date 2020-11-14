@@ -700,7 +700,7 @@ body {
 @media screen and (min-width: 768px) {
   .offer__inner {
     width: 719px;
-    padding: 30px 22px 39px 313px;
+    padding: 40px 22px 39px 313px;
     margin: 0 auto;
     background: url("../images/offer/girl-768.png");
     background-repeat: no-repeat;
@@ -710,17 +710,22 @@ body {
     display: none;
   }
   .offer__list {
+    padding-left: 20px;
     line-height: 20px;
     letter-spacing: 1.6px;
   }
+  .offer__list li + li {
+    margin-top: 30px;
+  }
   .offer__title {
-    margin-top: 50px;
+    margin-top: 45px;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 1px;
   }
   .offer__text {
     margin-top: 5px;
+    padding-left: 28px;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 1.6px;
@@ -814,6 +819,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .features {
+    margin-top: 75px;
+  }
   .features__list {
     width: 655px;
     margin: 0 auto;
@@ -822,8 +830,13 @@ body {
     justify-content: space-between;
   }
   .features__item {
+    padding: 28px 5px 4px 25px;
     margin: 0;
     margin-bottom: 28px;
+  }
+  .features__text {
+    padding-top: 28px;
+    letter-spacing: 1px;
   }
 }
 
@@ -968,9 +981,12 @@ body {
   }
   .advantage__list {
     padding: 0;
-    width: 468px;
+    width: 470px;
     margin: 0 auto;
     margin-top: 18px;
+  }
+  .advantage__record {
+    width: 432px;
   }
 }
 
@@ -1099,6 +1115,12 @@ body {
 
 .soc-list__item:nth-child(3) a {
   background: #00A9E7;
+}
+
+@media screen and (min-width: 768px) {
+  .soc-list__item {
+    margin-right: 14px;
+  }
 }
 
 .contact-list {

@@ -22,3 +22,11 @@
 		}
 	}
 }
+
+@media screen and(min-width: 768px) {
+	.soc-list {
+		&__item {
+			margin-right: 14px;
+		}
+	}
+}

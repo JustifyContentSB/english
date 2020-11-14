@@ -116,7 +116,7 @@
 	.offer {
 		&__inner {
 			width: 719px;
-			padding: 30px 22px 39px 313px;
+			padding: 40px 22px 39px 313px;
 			margin: 0 auto;
 			background: url('../images/offer/girl-768.png');
 			background-repeat: no-repeat;
@@ -126,17 +126,22 @@
 			}
 		}
 		&__list {
+			padding-left: 20px;
 			line-height: 20px;
 			letter-spacing: 1.6px;
+			& li + li {
+				margin-top: 30px;
+			}
 		}
 		&__title {
-			margin-top: 50px;
+			margin-top: 45px;
 			font-size: 36px;
 			line-height: 44px;
 			letter-spacing: 1px;
 		}
 		&__text {
 			margin-top: 5px;
+			padding-left: 28px;
 			font-size: 18px;
 			line-height: 22px;
 			letter-spacing: 1.6px;

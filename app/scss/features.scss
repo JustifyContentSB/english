@@ -1,8 +1,5 @@
 .features {
 	margin-top: 62px;
-	&__list {
-
-	}
 	&__item {
 		width: 313px;
 		min-height: 301px;
@@ -85,6 +82,7 @@
 
 @media screen and(min-width: 768px) {
 	.features {
+		margin-top: 75px;
 		&__list {
 			width: 655px;
 			margin: 0 auto;
@@ -93,8 +91,13 @@
 			justify-content: space-between;
 		}
 		&__item {
+			padding: 28px 5px 4px 25px;
 			margin: 0;
 			margin-bottom: 28px;
+		}
+		&__text {
+			padding-top: 28px;
+			letter-spacing: 1px;
 		}
 	}
 }
