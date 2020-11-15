@@ -155,15 +155,15 @@
 	<div id="lessonPopup" class="lesson mfp-hide">
 		<a class="lesson__close" href="#"></a>
 		<h2 class="lesson__title">Запись на урок</h2>
-		<form class="lesson__form" action="#">
+		<form class="lesson__form" action="POST">
 			<div class="lesson__input">
-				<input type="text" placeholder="Ваше имя">
+				<input type="text" name="person" placeholder="Ваше имя">
 			</div>
 			<div class="lesson__input">
-				<input type="text" placeholder="Ваш телефон">
+				<input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="Ваш телефон" required>
 			</div>
 			<div class="lesson__input">
-				<input type="text" placeholder="Ваш e-mail">
+				<input type="email" name="email" placeholder="Ваш e-mail">
 			</div>
 			<a class="lesson__btn" href="#">записаться</a>
 		</form>

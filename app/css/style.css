@@ -2045,6 +2045,7 @@ body {
   font-family: 'ProximaNova-Bold';
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
   background: #4643D3;
   border: none;
@@ -2059,4 +2060,10 @@ body {
 
 .lesson__btn:active {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 411px) {
+  .lesson {
+    width: 362px;
+  }
 }
