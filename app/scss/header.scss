@@ -1,27 +1,23 @@
 .header {
 	box-shadow: $boxShadow;
 	&__inner {
+		min-height: 87px;
 		padding: 22px 24px 26px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		text-transform: uppercase;
+		position: relative;
 	}
 	&__nav {
-		display: none;
-		&-tel {
-			display: none;
-			padding-left: 17px;
-			position: relative;
-			&::before {
-				content:'';
-				position: absolute;
-				left: 0;
-				top: 1px;
-				width: 13px;
-				height: 20px;
-				background: url('../images/header/tel.svg');
-			}
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: -100%;
+		background: #fff;
+		transition: all 0.3s ease;
+		&-block {
+			left: 0;
 		}
 	}
 	&__burger {
@@ -96,6 +92,9 @@
 @media screen and(min-width: 768px) {
 	.header {
 		&__inner {
+			min-height: 96px;
+			padding-top: 0;
+			padding-bottom: 0;
 			padding-right: 35px;
 			justify-content: space-between;
 		}
@@ -110,10 +109,7 @@
 			display: none;
 		}
 		&__nav {
-			display: block;
-			&-tel {
-				display: block;
-			}
+			position: static;
 		}
 		&__tel {
 			display: none;
@@ -133,7 +129,8 @@
 @media screen and(min-width: 1440px) {
 	.header {
 		&__inner {
-			padding: 13px 35px 13px 50px;
+			padding-right: 35px;
+			padding-left: 50px;
 		}
 	}
 }

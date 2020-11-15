@@ -7,21 +7,27 @@
 			letter-spacing: 1.6px;
 			color: $blue;
 		}
-	}
-}
-
-@media screen and(min-width: 768px) {
-	.nav {
-		&__list {
-			display: flex;
-			& li {
-				margin-right: 16px;
-				&:first-child {
-					margin-right: 25px;
-				}
-				&:last-child {
-					margin-right: 0;
-				}
+		& a {
+			display: block;
+			padding: 10px 20px;
+			transition: all 0.3s ease;
+			&:hover,
+			&:focus {
+				background: #FAEFE3;
+			}
+		}
+		& &-tel {
+			padding-left: 27px;
+			position: relative;
+			&::before {
+				content:'';
+				position: absolute;
+				left: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 13px;
+				height: 20px;
+				background: url('../images/header/tel.svg');
 			}
 		}
 	}
@@ -30,11 +36,23 @@
 @media screen and(min-width: 768px) {
 	.nav {
 		&__list {
-			& li {
-				margin-right: 60px;
-				&:first-child {
-					margin-right: 60px;
-				}
+			display: flex;
+			& a {
+				padding: 37px 8px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1000px) {
+	.nav {
+		&__list {
+			& a {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+			& &-tel {
+				padding-left: 30px;
 			}
 		}
 	}
@@ -43,10 +61,14 @@
 @media screen and(min-width: 1440px) {
 	.nav {
 		&__list {
-			& li {
-				margin-right: 140px;
-				&:first-child {
-					margin-right: 140px;
+			& a {
+				padding-right: 70px;
+				padding-left: 70px;
+			}
+			& &-tel {
+				padding-left: 70px;
+				&::before {
+					left: 40px;
 				}
 			}
 		}
