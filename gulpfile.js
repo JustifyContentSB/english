@@ -45,6 +45,14 @@ gulp.task('js', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('js', function() {
+    return gulp.src(['app/js/script.js'])
+    .pipe(concat('script.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
 
 gulp.task('watch', function() {
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'))
