@@ -4,6 +4,7 @@ let browserSync = require('browser-sync');
 let uglify = require('gulp-uglify');
 let concat = require('gulp-concat');
 let rename = require('gulp-rename');
+let autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('html', function() {
@@ -18,8 +19,9 @@ gulp.task('script', function() {
 
 gulp.task('scss', function() {
     return gulp.src('app/scss/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    // .pipe(rename({suffix: '.min'}))
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
 });
