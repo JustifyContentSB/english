@@ -3,16 +3,10 @@
 	&__inner {
 		position: relative;
 		overflow-x: hidden;
-		&::after {
-			content: '';
-			position: absolute;
-			top: 25%;
-			left: -25%;
-			max-width: 100%;
-			height: 921px;
-			background: url('../images/advantage/adv-bg.png');
-			z-index: -1;
-		}
+		background: url('../images/advantage/adv-bg.png');
+		background-repeat: no-repeat;
+		background-position: 10% 30%;
+		background-size: 500px;
 	}
 	&__title {
 		margin: 0;
@@ -113,6 +107,10 @@
 
 @media screen and(min-width: 411px) {
 	.advantage {
+		&__inner {
+			background-size: calc(100% - 20px);
+			background-position: center;
+		}
 		&__list {
 			& li {
 				font-size: 16px;
@@ -158,6 +156,10 @@
 
 @media screen and(min-width: 1000px) {
 	.advantage {
+		&__inner {
+			background-size: 654px;
+			background-position: top 30% center;
+		}
 		&__top {
 			width: 937px;
 			margin: 0 auto;
